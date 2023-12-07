@@ -1,9 +1,16 @@
-
 {
     "version": 2,
-    "output": "dist/app",
-    "env": {
-      "EXAMPLE_NAME": "I9JU23NF394R6HH"
-    }
+    "builds": [
+      {
+        "src": "client",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "client/$1"
+      }
+    ]
   }
   
