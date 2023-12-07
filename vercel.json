@@ -13,6 +13,6 @@
         "dest": "client/$1"
       }
     ],
-    "output": "dist/app"
+    "functions": { "output": "dist/app" }
   }
   
