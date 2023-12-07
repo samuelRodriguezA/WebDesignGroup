@@ -1,3 +1,4 @@
+// vite.config.js
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -19,7 +20,6 @@ export default defineConfig({
         target: `http://localhost:${PORT}`,
         changeOrigin: true,
       },
-     
     },
   },
   build: {
